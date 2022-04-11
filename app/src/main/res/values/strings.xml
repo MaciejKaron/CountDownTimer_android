@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">countDownTimer</string>
+    <string name="countDownTime">00:00</string>
+    <string name="button_start">start</string>
+    <string name="button_reset">reset</string>
+    <string name="button_pause">pause</string>
+    <string name="hint_minutes">Minutes</string>
+    <string name="hint_seconds">Seconds</string>
+    <string name="hint_hours">Hours</string>
+    <string name="button_set">set</string>
+    <string name="progress_txt">PROGRESS</string>
+
+    <string name="field_empty">Field can\'t be empty</string>
+    <string name="positive_number">Please enter a positive number</string>
+    <string name="rotate_phone">Rotate the phone!</string>
+
+    <string name="notification_title">Time is up!</string>
+    <string name="notification_message">Click to return to the application.</string>
+</resources>

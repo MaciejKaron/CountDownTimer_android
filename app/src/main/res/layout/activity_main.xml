@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/purple">
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/countDownTime"
+        android:textColor="@android:color/black"
+        android:textSize="60sp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/button_start_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/button_pink"
+        android:text="@string/button_start">
+
+    </Button>
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_start_pause"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/button_pink"
+        android:text="@string/button_reset"
+        android:visibility="invisible"
+        tools:visibility="visible">
+
+    </Button>
+
+<!--    MINUTY-->
+    <EditText
+        android:id="@+id/edit_text_input"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_set"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="@string/hint_minutes"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textColor="@color/black">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/button_set"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_view_countdown"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/button_pink"
+        android:text="@string/button_set">
+
+    </Button>
+
+<!--    SEKUNDY-->
+    <EditText
+        android:id="@+id/edit_text_seconds"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_set_seconds"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toLeftOf="@id/edit_text_input"
+        android:hint="@string/hint_seconds"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="4">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/button_set_seconds"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_view_countdown"
+        android:layout_marginRight="65dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toLeftOf="@id/button_set"
+        android:backgroundTint="@color/button_seconds"
+        android:text="@string/button_set">
+
+    </Button>
+
+<!--    GODZINY-->
+    <EditText
+        android:id="@+id/edit_text_hours"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_set_hours"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@id/edit_text_input"
+        android:gravity="center"
+        android:hint="@string/hint_hours"
+        android:inputType="number"
+        android:maxLength="2">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/button_set_hours"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_view_countdown"
+        android:layout_marginLeft="65dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@id/button_set"
+        android:backgroundTint="@color/button_hours"
+        android:text="@string/button_set">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/progress_bar"
+        android:layout_centerHorizontal="true"
+        android:text="@string/progress_txt"
+        android:textSize="26sp"
+        android:textColor="@color/button_pink">
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_above="@id/edit_text_input"
+        android:layout_marginBottom="80dp"
+        android:progressDrawable="@drawable/progress_bar">
+
+    </ProgressBar>
+
+    <!--    <Button-->
+<!--        android:id="@+id/button_test"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Send on Channel1"-->
+<!--        android:onClick="sendOnChannel1">-->
+<!--    </Button>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button_vibrate"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:onClick="abc"-->
+<!--        android:text="test wibracji">-->
+
+<!--    </Button>-->
+
+
+
+
+</RelativeLayout>
